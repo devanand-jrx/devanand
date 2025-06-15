@@ -306,7 +306,91 @@ img {
   border-radius: 0.5rem;
   z-index: var(--z-back);
 }
-.skills__html_css {
+/* Add these CSS rules to your existing stylesheet */
+
+/* Backend Skills */
+.skills__java {
+  width: 98%;
+}
+.skills__springboot {
+  width: 95%;
+}
+.skills__restapi {
+    width: 95%;
+    background-color: #4CAF50;
+}
+
+.skills__springsecurity {
+    width: 80%;
+    background-color: #6BCF7F;
+}
+
+.skills__jpa {
+    width: 88%;
+    background-color: #45A049;
+}
+
+.skills__microservices {
+    width: 85%;
+    background-color: #5CBB6A;
+}
+
+/* Database Skills */
+.skills__postgresql {
+    width: 90%;
+    background-color: #336791;
+}
+
+.skills__opensearch {
+    width: 75%;
+    background-color: #005EB8;
+}
+
+.skills__elasticsearch {
+    width: 70%;
+    background-color: #FEC514;
+}
+
+.skills__mongodb {
+    width: 65%;
+    background-color: #4DB33D;
+}
+
+/* DevOps & Tools */
+.skills__kubernetes {
+    width: 70%;
+    background-color: #326CE5;
+}
+.skills__git {
+  width: 90%;
+}
+.skills__aws {
+  width: 70%;
+}
+.skills__docker {
+  width: 75%;
+}
+
+.skills__githubactions {
+    width: 75%;
+    background-color: #2088FF;
+}
+
+.skills__gitlabci {
+    width: 72%;
+    background-color: #FC6D26;
+}
+
+.skills__terraform {
+    width: 68%;
+    background-color: #7B42BC;
+}
+
+.skills__kafka {
+    width: 73%;
+    background-color: #231F20;
+}
+/* .skills__html_css {
   width: 60%;
 }
 .skills__java {
@@ -332,7 +416,7 @@ img {
 }
 .skills__canva {
   width: 90%;
-}
+} */
 
 /* ===== CONTACT =====*/
 .contact__input {

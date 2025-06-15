@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <!-- or -->
-  <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <title>Devanand Ravindran</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-          <!-- Favicons -->
-          <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">        
-        </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Devanand Ravindran, Software Engineer 1">
+    <meta name="keywords" content="portfolio, software engineer, java, spring boot, developer">
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" as="style">
+    
+    <!-- Favicon with multiple sizes -->
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    
+    <title>Devanand Ravindran | Software Engineer</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Icons (load only one source) -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- Load scripts asynchronously -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+</head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
@@ -58,7 +65,7 @@
 
                 <div class="home__social">
                     <a href="https://github.com/devanand-jrx" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/devanand-ravindran/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/devanand-software-engineer/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                     <a href="mailto:devanandravindran10@gmail.com" class="home__social-icon"><i class='bx bxl-gmail' ></i></a>
                     <a href="https://www.instagram.com/devanand.jrx/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
                 </div>
@@ -78,168 +85,332 @@
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div class="about-container about__img about-info">
-                            <div>
-                                <h2 class="about__subtitle">I'am Devanand Ravindran</h2>
-                                <p class="about__text">
-                                    As an IT professional with 1 year of experience, I specialize in software development, analysis, and maintenance in web-based environments. My expertise includes backend technologies like Java, Spring Boot, Postgres, and AWS, enhancing my capabilities in creating robust and scalable solutions. Proficient in Scrum and Agile methodologies, I excel at collaborating with teams to deliver high-quality solutions efficiently and adaptively, ensuring alignment with project goals and stakeholder expectations.</p>           
-                            </div>
-                    </div>
-                                                     
-                </div>
-            </section>
+    <h2 class="section-title">About</h2>
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="assets/img/about.jpg" alt="">
+        </div>
+        
+        <div class="about-container about__img about-info">
+            <div>
+                <h2 class="about__subtitle">I'am Devanand Ravindran</h2>
+                
+                <p class="about__text" style="margin-bottom: 1rem;">
+                    Hi, I'm Devanand! I'm a software engineer who gets genuinely excited about writing code that makes people's lives easier.
+                </p>
+                
+                <p class="about__text" style="margin-bottom: 1rem;">
+                    I love building backend systems with Java and Spring Boot, there's something deeply satisfying about crafting APIs that just work seamlessly. My experience spans from helping digitize Kerala's Legislative Assembly (pretty cool, right?) to creating systems that sift through thousands of resumes in seconds.
+                </p>
+                
+                <p class="about__text" style="margin-bottom: 1rem;">
+                    What really drives me is that moment when I see my code actually helping people. Whether it's a government official who can now process documents faster or an HR team that finds the perfect candidate in half the time, that's when I know I'm doing something worthwhile.
+                </p>
+                
+                <p class="about__text" style="margin-bottom: 1rem;">
+                    When I'm not buried in Spring Boot configurations, you'll find me learning something new, sharing knowledge with fellow developers, or probably debugging something that "should definitely work" but doesn't.
+                </p>
+                
+                <p class="about__text">
+                    I believe the best software isn't just technically sound, it's built with real people in mind.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
              <!--===== EXPERIENCE =====-->
-             <section class="about section " id="Experience">
-                <h2 class="section-title">Experience</h2>
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/retro.png" alt="">
-                    </div>
-                    
-                    <div class="about-container about__img about-info">
-                            <div>
-                                <h2 class="about__subtitle">Edstem Technologies</h2>
-                                <p class="text">February 2023 - Present</p>
-                                <h3 class="about__subtitle">Project: Retro-Flow</h3>
-                                <p class="about__text">
-                                    In my role, I developed RetroFlow APIs, a SaaS solution for agile teams to manage Sprint Retrospectives efficiently. I integrated user profiles and role-based access control, distinguishing Admin and Member privileges. Additionally, I facilitated team collaboration by introducing retrospectives and action plans. Furthermore, I implemented features for user authentication, allowing secure login, and functionalities for creating and managing teams and organizations. Collaborating closely, I refined requirements and utilized technologies like Java, Spring Boot, PostgreSQL, AWS, and Git.</p>           
-                            </div>
-                    </div>
-                                                     
-                </div>
-            </section>
+<section class="about section " id="Experience">
+    <h2 class="section-title">Experience</h2>
+    
+    <!-- E-Niyamasabha Project -->
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="assets/img/e-niyamasabha.png" alt="">
+        </div>
+        
+        <div class="about-container about__img about-info">
+            <div>
+                <h2 class="about__subtitle">Edstem Technologies</h2>
+                <p class="text">February 2023 - Present</p>
+                <h3 class="about__subtitle">Project: E-Niyamasabha</h3>
+                <p class="about__text" style="margin-bottom: 2rem;">
+                    I architected and developed core REST APIs for Kerala Legislative Assembly's digital platform, transforming governance workflows for 500+ government officials. Built complex business logic for assembly-specific processes including question management, file handling, and secure document workflows with 99.9% uptime. Implemented robust authentication and authorization systems to handle sensitive government data, ensuring complete security compliance. The platform successfully digitized legislative processes, streamlining governance operations using Java, Spring Boot, PostgreSQL, Microservices, and Spring Security.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Talent-Scout Project -->
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="assets/img/talent-scout.png" alt="">
+        </div>
+        
+        <div class="about-container about__img about-info">
+            <div>
+                <h3 class="about__subtitle">Project: Talent-Scout</h3>
+                <p class="about__text" style="margin-bottom: 2rem;">
+                    I designed and developed a scalable HR Data Management System that revolutionized recruitment processes by handling 10,000+ resumes daily and reducing screening time by 60%. Built a high-throughput resume processing pipeline using Apache Kafka for real-time data processing. Implemented intelligent search and filtering APIs with OpenSearch, improving candidate discovery by 40% through advanced search capabilities. Developed concurrent data extraction and enrichment services to handle massive data volumes efficiently using Java, Spring Boot, OpenSearch, Apache Kafka, and AWS.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Retro-Flow Project -->
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="assets/img/retro.png" alt="">
+        </div>
+        
+        <div class="about-container about__img about-info">
+            <div>
+                <h3 class="about__subtitle">Project: Retro-Flow</h3>
+                <p class="about__text">
+                    In my role, I developed RetroFlow APIs, a SaaS solution for agile teams to manage Sprint Retrospectives efficiently. I integrated user profiles and role-based access control, distinguishing Admin and Member privileges. Additionally, I facilitated team collaboration by introducing retrospectives and action plans. Furthermore, I implemented features for user authentication, allowing secure login, and functionalities for creating and managing teams and organizations. Collaborating closely, I refined requirements and utilized technologies like Java, Spring Boot, PostgreSQL, AWS, and Git.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
             
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills__container bd-grid">
-                    <h2 class="skills__subtitle">Professional Skills</h2>
+<!--===== SKILLS =====-->
+<section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    
+    <!-- Professional Skills -->
+    <div class="skills__container bd-grid">
+        <h2 class="skills__subtitle">Professional Skills</h2>
+    </div>
+    <div class="skills__container bd-grid">          
+        <div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="bx bxl-java skills__icon"></i>
+                    <span class="skills__name">Java</span>
                 </div>
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="bx bxl-java skills__icon"></i>
-                                <span class="skills__name">Java</span>
-                            </div>
-                            <div class="skills__bar skills__java">    
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-spring-boot skills__icon'></i>
-                                <span class="skills__name">Springboot</span>
-                            </div>
-                            <div class="skills__bar skills__springboot">    
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-postgresql skills__icon'></i>
-                                <span class="skills__name">Postgres</span>
-                            </div>
-                            <div class="skills__bar skills__postgres">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-git skills__icon'></i>
-                                <span class="skills__name">Git</span>
-                            </div>
-                            <div class="skills__bar skills__git">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                    </div> 
-                    <div >   
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-aws skills__icon'></i>
-                                <span class="skills__name">AWS</span>
-                            </div>
-                            <div class="skills__bar skills__aws"></div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data" >
-                            <div class="skills__names">
-                                <i class='bx bxl-docker skills__icon'></i>
-                                <span class="skills__name">Docker</span>
-                            </div>
-                            <div class="skills__bar skills__docker"></div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                        <!-- <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5 & CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__html_css">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div> -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img width="32" height="40" src="https://img.icons8.com/fluency/48/canva.png" alt="Canva Icon" class="skills__icon">
-                                <span class="skills__name">Canva</span>
-                            </div>
-                            <div class="skills__bar skills__canva">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                    </div>        
-                    
+                <div class="skills__bar skills__java">    
                 </div>
-            </section>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-spring-boot skills__icon'></i>
+                    <span class="skills__name">Spring Boot</span>
+                </div>
+                <div class="skills__bar skills__springboot">    
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-server skills__icon'></i>
+                    <span class="skills__name">RESTful APIs</span>
+                </div>
+                <div class="skills__bar skills__restapi">
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-shield skills__icon'></i>
+                    <span class="skills__name">Spring Security</span>
+                </div>
+                <div class="skills__bar skills__springsecurity">
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-data skills__icon'></i>
+                    <span class="skills__name">JPA</span>
+                </div>
+                <div class="skills__bar skills__jpa">
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-cube skills__icon'></i>
+                    <span class="skills__name">Microservices</span>
+                </div>
+                <div class="skills__bar skills__microservices">
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-postgresql skills__icon'></i>
+                    <span class="skills__name">PostgreSQL</span>
+                </div>
+                <div class="skills__bar skills__postgresql"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-mongodb skills__icon'></i>
+                    <span class="skills__name">MongoDB</span>
+                </div>
+                <div class="skills__bar skills__mongodb"></div>
+            </div>
+        </div> 
+        <div>   
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-search skills__icon'></i>
+                    <span class="skills__name">OpenSearch</span>
+                </div>
+                <div class="skills__bar skills__opensearch"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-search-alt skills__icon'></i>
+                    <span class="skills__name">Elasticsearch</span>
+                </div>
+                <div class="skills__bar skills__elasticsearch"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-aws skills__icon'></i>
+                    <span class="skills__name">AWS</span>
+                </div>
+                <div class="skills__bar skills__aws"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-docker skills__icon'></i>
+                    <span class="skills__name">Docker</span>
+                </div>
+                <div class="skills__bar skills__docker"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-kubernetes skills__icon'></i>
+                    <span class="skills__name">Kubernetes</span>
+                </div>
+                <div class="skills__bar skills__kubernetes"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-github skills__icon'></i>
+                    <span class="skills__name">GitHub Actions</span>
+                </div>
+                <div class="skills__bar skills__githubactions"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-gitlab skills__icon'></i>
+                    <span class="skills__name">GitLab CI</span>
+                </div>
+                <div class="skills__bar skills__gitlabci"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-code-alt skills__icon'></i>
+                    <span class="skills__name">Terraform</span>
+                </div>
+                <div class="skills__bar skills__terraform"></div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Soft Skills -->
+    <div class="skills__container bd-grid">
+        <h2 class="skills__subtitle">Soft Skills</h2>
+    </div>
+    <div class="skills__container bd-grid">          
+        <div>
+             <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-user-voice skills__icon'></i>
+                    <span class="skills__name">Leadership</span>
+                </div>
+                <div class="skills__bar skills__leadership">
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-group skills__icon'></i>
+                    <span class="skills__name">Team Collaboration</span>
+                </div>
+                <div class="skills__bar skills__teamwork">    
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-chat skills__icon'></i>
+                    <span class="skills__name">Communication</span>
+                </div>
+                <div class="skills__bar skills__communication">    
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-cog skills__icon'></i>
+                    <span class="skills__name">Problem Solving</span>
+                </div>
+                <div class="skills__bar skills__problemsolving">
+                </div>
+            </div>
+           
+        </div> 
+        <div>   
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-time skills__icon'></i>
+                    <span class="skills__name">Time Management</span>
+                </div>
+                <div class="skills__bar skills__timemanagement"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-trending-up skills__icon'></i>
+                    <span class="skills__name">Adaptability</span>
+                </div>
+                <div class="skills__bar skills__adaptability"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-bulb skills__icon'></i>
+                    <span class="skills__name">Critical Thinking</span>
+                </div>
+                <div class="skills__bar skills__criticalthinking"></div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-target-lock skills__icon'></i>
+                    <span class="skills__name">Attention to Detail</span>
+                </div>
+                <div class="skills__bar skills__attention"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+            <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form id="submit-form" action=""  class="contact__form">
-                        <input placeholder="Name" type="text" name="name" required ="Name" class="contact__input">
-                        <input placeholder="Email" type="email" name="email" required ="Email" class="contact__input">
-                        <input placeholder="Subject" type="text" name="subject" required ="Subject" class="contact__input">
-                        <textarea placeholder="Tell me..." required ="topic" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="submit" value="sent" class="contact__button button">
-
-                    </form>
-                </div>
-            </section>
-        </main>
+            <div class="contact__container bd-grid">
+                <form id="submit-form" action="" class="contact__form">
+                    <input placeholder="Name" type="text" name="name" required class="contact__input">
+                    <input placeholder="Email" type="email" name="email" required class="contact__input">
+                    <input placeholder="Subject" type="text" name="subject" required class="contact__input">
+                    <textarea placeholder="Tell me..." required id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="submit" value="Send" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
         
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Devanand Ravidran</p>
-        </footer>
+        <p class="footer__title">Devanand Ravindran</p>
+        <div class="footer__social">
+            <a href="https://github.com/devanand-jrx" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/devanand-software-engineer/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="mailto:devanandravindran10@gmail.com" class="footer__icon"><i class='bx bxl-gmail'></i></a>
+            <a href="https://www.instagram.com/devanand.jrx/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="footer__copy">© 2023 Devanand Ravindran. All rights reserved</p>
+    </footer>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
