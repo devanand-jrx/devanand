@@ -145,7 +145,7 @@ img {
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
-    transition: 0.5s;
+    transition: 0.2s;
   }
 }
 .nav__item {
@@ -474,7 +474,7 @@ img {
   border-radius: 15px;
   padding: 2.5rem; /* Increased padding */
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
   border-left: 4px solid var(--first-color);
 }
 
@@ -673,7 +673,7 @@ img {
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
   border-left: 3px solid var(--first-color);
 }
 
@@ -747,129 +747,166 @@ img {
     grid-template-columns: 1fr;
   }
 }
-
-/* ===== SKILLS =====*/
+/* ===== SKILLS SECTION ===== */
 .skills__container {
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
+
 .skills__subtitle {
   margin-bottom: var(--mb-2);
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
 }
-.skills__text {
-  margin-bottom: var(--mb-4);
-}
+
 .skills__data {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   font-weight: var(--font-semi);
-  padding: 0.5rem 1rem;
-  margin-bottom: var(--mb-4);
+  padding: 1rem;
+  margin-bottom: var(--mb-2);
   border-radius: 0.5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background: white;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
 }
+
+.skills__data:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
 .skills__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
+  font-size: 1.8rem;
+  margin-right: var(--mb-1);
   color: var(--first-color);
+  transition: transform 0.3s ease;
 }
+
+.skills__data:hover .skills__icon {
+  transform: scale(1.1);
+}
+
 .skills__names {
   display: flex;
   align-items: center;
+  z-index: var(--z-normal);
 }
+
 .skills__bar {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--first-color);
-  height: 0.25rem;
+  height: 4px;
   border-radius: 0.5rem;
-  z-index: var(--z-back);
+  background-color: #f1f1f1;
+  width: 100%;
 }
-/* Add these CSS rules to your existing stylesheet */
 
-/* Backend Skills */
-.skills__java {
+.skills__percentage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  border-radius: 0.5rem;
+  background: var(--first-color);
+  transition: width 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Skill percentage classes with faster animations */
+.skills__java .skills__percentage { 
   width: 98%;
 }
-.skills__springboot {
+.skills__springboot .skills__percentage { 
   width: 95%;
 }
-.skills__restapi {
-    width: 95%;
-    background-color: #4CAF50;
+.skills__restapi .skills__percentage { 
+  width: 95%;
+  background-color: #4CAF50;
 }
-
-.skills__springsecurity {
-    width: 80%;
-    background-color: #6BCF7F;
+.skills__springsecurity .skills__percentage { 
+  width: 80%;
+  background-color: #6BCF7F;
 }
-
-.skills__jpa {
-    width: 88%;
-    background-color: #45A049;
+.skills__jpa .skills__percentage { 
+  width: 88%;
+  background-color: #45A049;
 }
-
-.skills__microservices {
-    width: 85%;
-    background-color: #5CBB6A;
+.skills__microservices .skills__percentage { 
+  width: 85%;
+  background-color: #5CBB6A;
 }
-
-/* Database Skills */
-.skills__postgresql {
-    width: 90%;
-    background-color: #336791;
-}
-
-.skills__opensearch {
-    width: 75%;
-    background-color: #005EB8;
-}
-
-.skills__elasticsearch {
-    width: 70%;
-    background-color: #FEC514;
-}
-
-.skills__mongodb {
-    width: 65%;
-    background-color: #4DB33D;
-}
-
-/* DevOps & Tools */
-.skills__kubernetes {
-    width: 70%;
-    background-color: #326CE5;
-}
-.skills__git {
+.skills__postgresql .skills__percentage { 
   width: 90%;
+  background-color: #336791;
 }
-.skills__aws {
+.skills__opensearch .skills__percentage { 
+  width: 75%;
+  background-color: #005EB8;
+}
+.skills__elasticsearch .skills__percentage { 
+  width: 70%;
+  background-color: #FEC514;
+}
+.skills__mongodb .skills__percentage { 
+  width: 65%;
+  background-color: #4DB33D;
+}
+.skills__kubernetes .skills__percentage { 
+  width: 70%;
+  background-color: #326CE5;
+}
+.skills__aws .skills__percentage { 
   width: 70%;
 }
-.skills__docker {
+.skills__docker .skills__percentage { 
   width: 75%;
 }
-
-.skills__githubactions {
-    width: 75%;
-    background-color: #2088FF;
+.skills__githubactions .skills__percentage { 
+  width: 75%;
+  background-color: #2088FF;
+}
+.skills__gitlabci .skills__percentage { 
+  width: 72%;
+  background-color: #FC6D26;
+}
+.skills__terraform .skills__percentage { 
+  width: 68%;
+  background-color: #7B42BC;
+}
+.skills__kafka .skills__percentage { 
+  width: 73%;
+  background-color: #231F20;
 }
 
-.skills__gitlabci {
-    width: 72%;
-    background-color: #FC6D26;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills__container {
+    padding: 0 1.5rem;
+  }
+  
+  .skills__data {
+    padding: 0.8rem;
+  }
+  
+  .skills__icon {
+    font-size: 1.5rem;
+  }
 }
 
-.skills__terraform {
-    width: 68%;
-    background-color: #7B42BC;
-}
-
-.skills__kafka {
-    width: 73%;
-    background-color: #231F20;
+@media (max-width: 480px) {
+  .skills__container {
+    padding: 0 1rem;
+  }
+  
+  .skills__percentage {
+    height: 3px;
+  }
 }
 /* .skills__html_css {
   width: 60%;
